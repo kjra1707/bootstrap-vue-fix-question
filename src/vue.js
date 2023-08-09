@@ -98,7 +98,7 @@ if (isVue3) {
           })
 
           const IGNORED_CHILDREN_KEYS = ['_ctx']
-          const children = ctx.children?.default?.() || ctx.children
+          const children = ctx.children.default() || ctx.children
 
           if (
             children &&
